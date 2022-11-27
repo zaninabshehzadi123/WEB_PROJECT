@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            color: whitesmoke;
+            background-image: url("https://images.pexels.com/photos/1378424/pexels-photo-1378424.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+        h1 {
+            text-align: justify, center;
+            color: cyan;
+        }
+
+        .pannel {
+            font-family: "Times New Roman", Times, serif;
+
+            background-color: #b2b2b2;
+            background-color: rgba(0, 0, 0, .5);
+            width: 70%;
+            padding: 4rem;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.75);
+        }
+
+        .pannel>input {
+            font-size: 16px;
+            font-size: max(16px, 1em);
+            font-family: inherit;
+            padding: 0.25em 0.5em;
+            background-color: #fff;
+            border: 2px solid var(--input-border);
+            border-radius: 4px;
+        }
+
+
+        .btn {
+            width: 50%;
+            height: 20%;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: darkolivegreen;
+
+            border: 2px solid;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form onsubmit="return formValidator()">
+
+        <div class="pannel">
+            <h1>BILL PAYMENT</h1>
+            <label for="NAME">First Name</label>
+            <input type="text" name="fname" id="fname"><br>
+            <label for="First">Last name</label>
+            <input type="text" name="lname" id="lname"><br>
+            <label for="Address">Address</label>
+            <input type="text" name="street adress" id="address"><br>
+
+            <label for="phone">Phone</label>
+            <input type="number" name="phone" id="phone"><br>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email"><br>
+
+
+
+            <br><br>
+            <button class="btn" type="submit" value="Submit"> Submit </button>
+        </div>
+    </form>
+
+
+
+</body>
+
+
+
+</html>
